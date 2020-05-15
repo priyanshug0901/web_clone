@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<link rel="stylesheet" type="text/css" href="C:\Users\Administrator\OneDrive\Documents\web develped projectS\sublime practice code\devproject1\resources\css" type="text/css" rel="stylesheet"
+
+
+< meta charset="utf-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">> 
+<meta name="description" content="Use the tools on your own computer to start your own HTML/CSS project!">
+
+
+
+
+
+<title>Pproject.One</title>
+</head>
+<body>
+<p><ul><li>code academy</li><li>catalog</li><li>learn from home</li><li>pricing</li><li>for bussiness</li></li></ul></p>
+<p> <a href="https://www.codecademy.com/articles"> codeacademy articles> </a></p>
+<p>	<h2>Requirements:</h2>
+<ul>
+<li>Text editor (we recommend VS Code)
+</li><li>An Internet browser
+</li></ul>
+<h1>INTRODUCTION</h1><br>
+In this article, we’ll cover how to take the CSS skills you’ve learned on Codecademy and use them to create a basic web page built entirely from the tools you have on your computer. Before you proceed, you should already be familiar with the basics of text editors, local files, and directories, all of which are covered <a href="https://www.codecademy.com/articles/visual-studio-code">elsewhere</a>  on Codecademy.</p><p>
+We recommend that you watch this explainer video and then follow the instructions below.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wzWmZYi4qMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p>If you’d like some optional extra guidance on real-world CSS, watch the <a href="https://youtu.be/EGMSlY2v5xk">second part</a> of the video.</p>
+
+<h1>Create a folder structure for your web page.</h1>
+<p>Let’s create a folder structure to support your web page. A well-designed folder structure will help you quickly navigate to the HTML or CSS files that contain your code.</p>
+
+<p>First, open Finder (in Mac) or Explorer (in Windows). Next, create a folder (also known as a directory) called DevProject. This folder will contain all of the files for your HTML and CSS project.</p>
+
+<p>Open the <b>DevProject</b> folder. Inside, create the following items:</p>
+
+<p>
+<ol>
+<li>A new file called index.html (use your preferred text editor)</li><li>
+A new folder called resources</li>
+</ol>
+The <b>index.html</b> file will contain the HTML code for your web page, while the<b> resources</b> folder will contain all of the necessary resources needed by the HTML files (CSS files, images, etc.).</p>
+
+<p>Next, open the newly created<b> resources</b> folder. Inside of this folder, create the following:</p>
+
+<p><ol><li>An additional folder named css</li></ol>
+The <b>css</b> folder will contain the CSS files needed to style your web page.
+
+Finally, open the <b>css</b> folder you just created. Inside of this folder, create the following:</p>
+<ol><li>a new file named<b>index.css(use your preferred editor)</b></li></ol>
+<p>The <b>index.css</b> file will contain all of the CSS styling rules that will be applied to your web page.</p>
+
+<p>This overall folder structure will help support your workflow as you add files or resources. At a high-level, here’s what it should look like:</p>
+<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/filesystem-start.svg">
+
+
+
+<p>
+	<h1>STEP 2: ADD CONTENT TO YOUR WEB PAGE</h1>
+Great! With your folder structure, HTML, and CSS files all in the right place, we can add content to the web page.</p>
+<p>
+First, open the index.html file in your preferred text editor. Next, add the required boilerplate HTML code:</p>
+
+
+<code>&lt;!DOCTYPE html&gt;<br>
+	&lt;html&gt;<br>
+	&lt;head&gt;<br>
+	&lt;title&gt;/title&gt;<br>
+	&lt;/head&gt;<br>
+	&lt;body&gt;<br>
+
+	&lt;/body&gt;<br>
+&lt;/html&gt;</code>>
+<p>After you add the boilerplate HTML code, feel free to also add the following items:</p>
+<p>
+	<ol><li>your own title between the <code> &lt;title&gt; </code> tags</li><li>Your own content within the &lt;body&gt; tags. If you need some quick, pre-written content, feel free to use the following and modify as you wish:</li></ol>
+
+
+	<div> <pre> &lt;h1&gt;FirstName LastName&lt;/h1&gt;
+		&lt;p&gt;I'm learning to code on Codecademy! My goals include:&lt;/p&gt;
+		&lt;ul&gt;
+		&lt;li&gt;Learn to code&lt;/li&gt;
+		&lt;li&gt;Start a company&lt;/li&gt;
+		&lt;li&gt;Help the world&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;p&gt;This is one of my favorite websites: <a href="https://www.google.com/" target="_blank">Google</a> &lt;a&gt;&lt;p&gt; </pre>
+	</div>
+
+	<p>
+		Finally, open the <b>index.css</b> file in your preferred text editor. Add the following pre-written CSS rules to the file (feel free to modify as you wish):</p>
+		<code>
+			<pre>* {
+				font-family: Helvetica, Arial, sans-serif;
+			       }
+                h1 {
+		  	    color: SeaGreen;
+		        }
+               p, 
+		       li {
+		      font-size: 18px;
+              }
+            a {	text-decoration: none;
+}</pre></code>
+<p><h1>
+STEP 3: LINK YOUR HTML FILE AND CSS FILE</h1>
+As it turns out, the HTML content you added will not be styled by the CSS rules unless<b> index.html</b> and <b>index.css</b> are linked together. In the<code>&lt;head &gt;</code> section, link the stylesheet to the HTML file.</p><br>
+
+&lt;link href="./resources/css/index.css" type="text/css" rel="stylesheet"&gt;<br>
+<p>You might be wondering why the <code>href</code> attribute is set to <code>./resources/css/index.css</code>. This is because you must specify exactly where the index.css file lives within your folder(s) relative to where index.html lives (otherwise, the two files won’t link).</p>
+<p>
+	If you have trouble linking your HTML and CSS, head to the <a href="https://discuss.codecademy.com/t/how-do-i-link-my-html-and-css/423288"> Codecademy community forums</a> for help.</p>
+
+	<p>Again, make sure to save your changes!
+
+		<h3>STEP 4: VIEW YOUR PROJECT</h3>
+		<p>Great work - let’s take a look at your web page in the browser.<br><br>
+
+		Open your preferred web browser. In the menu bar, click on “File” and then click on “Open File…” (or equivalent). Navigate to your index.html file and then click “Open” (or equivalent). The browser should load your web page. What do you see?</p><p>
+
+		At this point, feel free to make changes to your HTML or CSS code. Keep in mind that in order to view any new changes you make, you’ll have to refresh your browser.</p><p>
+
+			<h3>REVIEW</h3><p>
+			Congrats! In this short time, you learned how to take what you’ve been learning on Codecademy and apply it using the tools you have available on your own personal computer. You successfully learned how to:</p><p>
+
+				<ol><li>create a folder structure to supprt both your workflow nd your web page</li><li>Add HTML content and CSS styling to respective files</li><li>
+				Link the HTML and CSS files together</li><li>
+				View your web page in a browser (and refresh the browser to view new changes)</li></ol></p><p>
+			In general, the four points above are a strong starting point for your own developer workflow. As you learn more, you may modify the workflow to fit your specific needs. At this point, feel free to modify the content of the web page or create an entirely new project. Happy coding!
+					<p>
+					</body>
+					</html>
